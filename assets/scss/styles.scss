@@ -5,11 +5,10 @@
 :root{
     --header-height: 3rem;
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
+  
     --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    /* HSL color mode */
+
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -23,7 +22,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== Font and typography ==========*/
+
     --body-font: 'Poppins', sans-serif;
 
     --big-font-size: 2rem;
@@ -44,11 +43,11 @@
         --smaller-font-size: .813rem;
     }
 
-    /*========== Font weight ==========*/
+
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+ 
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -58,15 +57,15 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*========== z index ==========*/
+ 
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme{
-    /* HSL color mode */
+
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -77,7 +76,7 @@ body.dark-theme{
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
+
 .nav__btns{
     display: flex;
     align-items: center;
@@ -94,7 +93,7 @@ body.dark-theme{
     }
 }
 
-/*==================== BASE ====================*/
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -128,7 +127,7 @@ img{
     height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+
 .section{
     padding: 2rem 0 4rem;
 
@@ -148,7 +147,7 @@ img{
     }
 }
 
-/*==================== LAYOUT ====================*/
+
 .container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
@@ -169,7 +168,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -243,22 +242,22 @@ img{
     }
 }
 
-/* show menu */
+
 .show-menu{
     bottom: 0;
 }
 
-/* Active link */
+
 .active-link{
     color: var(--first-color);
 }
 
-/* Change background header */
+
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
-/*==================== HOME ====================*/
+
 .home{
     &__container{
         gap: 1rem;
@@ -332,7 +331,7 @@ img{
     }
 }
 
-/*========== BUTTONS ==========*/
+
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -377,7 +376,7 @@ img{
     }
 }
 
-/*==================== ABOUT ====================*/
+
 .about{
     &__img{
         width: 200px;
@@ -414,7 +413,7 @@ img{
     }
 }
 
-/*==================== SKILLS ====================*/
+
 .skills{
     &__container{
         row-gap: 0;
@@ -516,7 +515,7 @@ img{
     }
 }
 
-/*==================== QUALIFICATION ====================*/
+
 .qualification{
     &__tabs{
         display: flex;
@@ -579,7 +578,7 @@ img{
     }
 }
 
-/*==================== SERVICES ====================*/
+
 .services{
     &__container{
         gap: 1.5rem;
@@ -667,13 +666,13 @@ img{
     }
 }
 
-/* Active Modal */
+
 .active-modal{
     opacity: 1;
     visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+
 .portfolio{
     &__container{
         overflow: initial;
@@ -726,7 +725,7 @@ img{
     outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
+
 .project{
     text-align: center;
 
@@ -752,43 +751,10 @@ img{
     }
 }
 
-/*==================== TESTIMONIAL ====================*/
-.testimonial{
-    
-    &__data,
-    &__header{
-        display: flex;
-    }
-    &__data{
-        justify-content: space-between;
-        margin-bottom: var(--mb-1);
-    }
-    &__img{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-right: var(--mb-0-75);
-    }
-    &__name{
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-medium);
-    }
-    &__client{
-        font-size: var(--small-font-size);
-        color: var(--text-color-light);
-    }
-    &__description{
-        margin-bottom: var(--mb-2-5);
-    }
-    &__icon-star{
-        color: var(--first-color);
-    }
-}
 .swiper-container .swiper-pagination-testimonial{
     bottom: 0;
 }
 
-/*==================== CONTACT ME ====================*/
 .contact{
     &__container{
         row-gap: 3rem;
@@ -831,7 +797,7 @@ img{
     }
 }
 
-/*==================== FOOTER ====================*/
+
 .footer{
     padding-top: 2rem;
     
@@ -880,7 +846,7 @@ img{
     }
 }
 
-/*========== SCROLL UP ==========*/
+
 .scrollup{
     position: fixed;
     right: 1rem;
@@ -902,12 +868,12 @@ img{
     }
 }
 
-/* Show scroll */
+
 .show-scroll{
     bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+
 ::-webkit-scrollbar{
     width: .60rem;
     border-radius: .5rem;
@@ -923,8 +889,7 @@ img{
     background-color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+
 @media screen and(max-width: 350px){
     .container{
         margin-left: var(--mb-1);
@@ -973,25 +938,9 @@ img{
     .project__img{
         width: 200px;
     }
-
-    .testimonial{
-        &__data,
-        &__header{
-            flex-direction: column;
-            align-items: center;
-        }
-        &__img{
-            margin-right: 0;
-            margin-bottom: var(--mb-0-25);
-        }
-        &__data,
-        &__description{
-            text-align: center;
-        }
-    }
 }
 
-/* For medium devices */
+
 @media screen and(min-width: 568px){
     .home{
         &__content{
@@ -1188,7 +1137,7 @@ img{
 
 }
 
-/* For large devices */
+
 @media screen and(min-width: 1024px){
     .header,
     .main,
@@ -1232,11 +1181,7 @@ img{
         bottom: 0;
     }
 
-    .testimonial__description{
-        margin-bottom: 4rem;
-    }
-
-    .contact{
+       .contact{
         &__form{
             width: 460px;
         }
